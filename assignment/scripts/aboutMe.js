@@ -17,6 +17,7 @@ console.log(luckyNumber);
 // 'My name is (full name), and I think (lucky number) is a winner!'.
 // Refer back to the videos if you need help with this one.
 console.log('My name is ' + fullName + ', and I think ' + luckyNumber + ' is a winner!');
+console.log(`My name is ${fullName} and I think ${9} is a winner!`);
 // 7 - Create a variable named `adventurous` and set it to a boolean value (true or false)
 let adventurous = false;
 console.log(adventurous);
@@ -53,15 +54,17 @@ if (luckyNumber == 2 && adventurous == true){
 // console logs "I have enough pets" if the value of `pets` is equal to the value of `allowedPets`,
 // and console logs "Oh no, I have too many pets!"
 // if the value of `pets` is greater than the value of `allowedPets`.
-if (pets < allowedPets){
-    console.log("I have enough pets"); 
-} 
-else if(pets == allowedPets && pets > allowedPets){
+
+if (pets < allowedPets) {
+    console.log("I can have more pets");
+} else if (pets === allowedPets){
+    console.log("I have enough pets");
+} else if (pets > allowedPets){
     console.log("Oh no, I have too many pets!");
 }
- else{
- console.log("I can have more pets!");   
-}
+
+
+
 
 // STRETCH GOALS:
 
@@ -88,16 +91,16 @@ if (friendsPets > pets && friendsPets >= pets) {
 
 switch (luckyNumber) {
     case 1: 
-        system.out.printIn( "First is the worst");
+        console.log( "First is the worst");
         break;
     case 2:
-        system.out.printIn("Second is the best");
+        console.log("Second is the best");
         break;
      case 3:
-         system.out.printIn("Third is the one with the polka dot dress")
+         console.log("Third is the one with the polka dot dress")
          break;
     default:
-        system.out.printIn("Luck is what happens when preparation meets opportunity");
+        console.log("Luck is what happens when preparation meets opportunity");
 }
 
 
