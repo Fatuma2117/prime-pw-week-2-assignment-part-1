@@ -62,10 +62,6 @@ if (pets < allowedPets) {
 } else if (pets > allowedPets){
     console.log("Oh no, I have too many pets!");
 }
-
-
-
-
 // STRETCH GOALS:
 
 // 16 - Make a variable called `mostPets` and a conditional that
@@ -74,14 +70,13 @@ if (pets < allowedPets) {
 // be sure to think through all the scenarios. 
 // console.log `mostPets` after the conditional has run.
 
-let mostPets = 5;
-
-if (friendsPets > pets && friendsPets >= pets) {
-    console.log("I think all pets are beautiful!");  
-} else {
-    console.log(" I don't like any pets"); 
-}
-
+if (pets >= friendsPets){
+    mostPets = pets;
+ } else {
+     mostPets = friendsPets;
+ }
+ console.log(mostPets);
+ 
 // 17 - Write a *switch* statement that logs:
 //      "First is the worst" if your lucky number is 1
 //      "Second is the best" if your lucky number is 2
